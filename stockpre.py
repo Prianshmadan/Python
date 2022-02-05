@@ -1,6 +1,5 @@
 import streamlit as st
 from datetime import date
-
 import yfinance as yf
 from fbprophet import Prophet
 from fbprophet.plot import plot_plotly
@@ -11,10 +10,10 @@ TODAY = date.today().strftime("%Y-%m-%d")
 
 st.title('Stock Forecast App')
 
-stocks = ('GOOG', 'AAPL', 'MSFT', 'GME')
+stocks = ('GOOG', 'AAPL', 'MSFT', 'GME','TSLA','BTC-USD','ETH-USD','XRP-USD','HEX-USD')
 selected_stock = st.selectbox('Select dataset for prediction', stocks)
 
-n_years = st.slider('Years of prediction:', 1, 4)
+n_years = st.slider('Years of prediction:', 1, 5)
 period = n_years * 365
 
 
