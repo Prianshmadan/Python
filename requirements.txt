@@ -1,8 +1,6 @@
 streamlit==1.5.0
 base58==2.0.0
 plotly==5.5.0
-numpy==1.18.1
-yfinance==0.1.54
+yfinance==0.1.70
 fbprophet==0.7.1
-lxml==4.5.1
-zict==2.0.0
+pystan==2.19.1.1
